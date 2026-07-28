@@ -1,75 +1,81 @@
 ## Hi there 👋
 
-# Data Analytics Portfolio
+📊 Data Analytics Portfolio
 
-## About Me
+Welcome to my Data Analytics Portfolio.
 
-Hi, I'm Aruna Sharma.
+I am Aruna Sharma, a Data Analyst transitioning from enterprise application support with experience working with business applications, reporting, data validation, and stakeholder collaboration.
 
-I am a Data Analyst transitioning from enterprise application support with experience supporting business-critical applications and analyzing operational data.
+My goal is to transform raw data into meaningful business insights using SQL, Power BI, Python, and Excel.
 
-I specialize in:
+👩‍💻 About Me
 
+- 6+ years experience supporting enterprise applications
+- Experience working with business users and technical teams
+- Strong background in data analysis and reporting
+- Currently building expertise in Data Analytics and Business Intelligence
+
+🛠️ Technical Skills
+
+#Data Analytics
 - SQL
 - Power BI
 - Excel
 - Python
+- Data Cleaning
 - Data Visualization
 - Business Analysis
 
-I enjoy transforming raw data into meaningful insights that help businesses make better decisions.
-
-
-## Technical Skills
-
-### Data Analytics
-- SQL
-- Power BI
-- Excel
-- Python
-- Statistics
-- Data Cleaning
-
-### Tools
+#Tools
 - PostgreSQL
 - Power Query
 - DAX
 - GitHub
 - Jupyter Notebook
 
+📂 Projects
 
-## Projects
+📊 Power BI Projects
+# E-commerce Sales Analysis Dashboard
 
+Tools:
+Power BI | DAX | Power Query
 
-### Power BI Projects
+Description:
+Analyzed Brazilian e-commerce sales data to identify revenue trends, customer behavior, product performance, and business opportunities.
 
-Coming soon:
-- E-commerce Sales Analysis Dashboard
-- Customer Behavior Dashboard
+🗄️ SQL Projects
 
+# E-commerce Customer Analysis
 
-### SQL Projects
+Tools:
+SQL | PostgreSQL
 
-Coming soon:
-- Customer Analysis
-- Sales Analysis
-- Product Performance Analysis
+Business questions answered:
+- Who are the most valuable customers?
+- What states generate the most customers?
+- What percentage of customers return?
 
+🐍 Python Projects
 
-### Python Projects
+Coming Soon
 
-Coming soon:
-- Data Cleaning Projects
+Projects using:
+- Pandas
+- NumPy
+- Data Cleaning
 - Exploratory Data Analysis
 
 
-## Certifications
+# 🎓 Certifications
 
 - Agile ITech Data Analyst Program
 - UNC Business Analyst Certification
 
 
-## Contact
+---
+
+# Contact
 
 LinkedIn:
 https://www.linkedin.com/in/aruna-sharma7911/
