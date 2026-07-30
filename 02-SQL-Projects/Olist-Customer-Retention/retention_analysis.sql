@@ -1,9 +1,12 @@
+==================================================
 Query 1: Total number of unique customers
+==================================================  
   SELECT
     COUNT(DISTINCT customer_unique_id) AS total_customers
 FROM olist_customers_dataset;
-
+==================================================
 Query 2: Total orders per customer
+ ================================================= 
 SELECT
     c.customer_unique_id,
     COUNT(o.order_id) AS total_orders
@@ -15,8 +18,9 @@ ON c.customer_id = o.customer_id
 GROUP BY c.customer_unique_id
 
 ORDER BY total_orders DESC;
-
+==================================================
 Query 3: Identify repeat customers
+==================================================  
 
 SELECT
     COUNT(*) AS repeat_customers
@@ -24,39 +28,36 @@ FROM
 (
     SELECT
         c.customer_unique_id,
-        COUNT(o.order_id) AS order_count
+        COUNT(o.order_id) AS total_orders
     FROM olist_customers_dataset c
-
     JOIN olist_orders_dataset o
-    ON c.customer_id = o.customer_id
-
+        ON c.customer_id = o.customer_id
     GROUP BY c.customer_unique_id
-) customer_orders
+    HAVING COUNT(o.order_id) > 1
+) repeat_customer;
 
-WHERE order_count > 1;
-
-
+========================================================================
 Query 4: Customer retention rate
+=======================================================================
 
-
-SELECT
-    ROUND(
-        COUNT(*) FILTER (WHERE order_count > 1) * 100.0
-        / COUNT(*),
-        2
-    ) AS retention_rate_percentage
-FROM
+WITH customer_orders AS
 (
     SELECT
         c.customer_unique_id,
-        COUNT(o.order_id) AS order_count
+        COUNT(o.order_id) AS total_orders
     FROM olist_customers_dataset c
-
     JOIN olist_orders_dataset o
-    ON c.customer_id = o.customer_id
-
+        ON c.customer_id = o.customer_id
     GROUP BY c.customer_unique_id
-) customer_orders;
+)
+
+SELECT
+    ROUND(
+        COUNT(*) FILTER (WHERE total_orders > 1) * 100.0
+        / COUNT(*),
+        2
+    ) AS retention_rate_percentage
+FROM customer_orders;
 ================================================================
 Query 5: Do higher-rated customers return?
 ================================================================
