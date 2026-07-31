@@ -32,3 +32,12 @@ Analyze customer behavior, sales performance, payment trends, and repeat custome
 - Identified top revenue-generating categories
 - Analyzed customer retention patterns
 - Evaluated payment method preferences
+- Power BI Dashboard
+
+Interactive dashboard analyzing:
+- Sales performance
+- Customer behavior
+- Payment trends
+- Repeat customers
+
+![Dashboard](PowerBI-Dashboard/Dashboard_Screenshot.png)
